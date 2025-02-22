@@ -1,6 +1,8 @@
+/* style.css */
 body {
     padding-top: 20px;
 }
+
 * {
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
@@ -8,48 +10,65 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
 body {
-    background-color: #435165;
+    background-color: #f8f9fa;
     margin: 0;
 }
-.login, .register {
+
+.login,
+.register {
     width: 400px;
     background-color: #ffffff;
-    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
     margin: 100px auto;
 }
-.login h1, .register h1 {
+
+.login h1,
+.register h1 {
     text-align: center;
     color: #5b6574;
     font-size: 24px;
     padding: 20px 0 20px 0;
     border-bottom: 1px solid #dee0e4;
 }
-.login .links, .register .links {
+
+.login .links,
+.register .links {
     display: flex;
     padding: 0 15px;
 }
-.login .links a, .register .links a {
+
+.login .links a,
+.register .links a {
     color: #adb2ba;
     text-decoration: none;
     display: inline-flex;
     padding: 0 10px 10px 10px;
     font-weight: bold;
 }
-.login .links a:hover, .register .links a:hover {
+
+.login .links a:hover,
+.register .links a:hover {
     color: #9da3ac;
 }
-.login .links a.active, .register .links a.active {
+
+.login .links a.active,
+.register .links a.active {
     border-bottom: 3px solid #3274d6;
     color: #3274d6;
 }
-.login form, .register form {
+
+.login form,
+.register form {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 20px;
 }
-.login form label, .register form label {
+
+.login form label,
+.register form label {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,14 +77,22 @@ body {
     background-color: #3274d6;
     color: #ffffff;
 }
-.login form input[type="password"], .login form input[type="text"], .login form input[type="email"], .register form input[type="password"], .register form input[type="text"], .register form input[type="email"] {
+
+.login form input[type="password"],
+.login form input[type="text"],
+.login form input[type="email"],
+.register form input[type="password"],
+.register form input[type="text"],
+.register form input[type="email"] {
     width: 310px;
     height: 50px;
     border: 1px solid #dee0e4;
     margin-bottom: 20px;
     padding: 0 15px;
 }
-.login form input[type="submit"], .register form input[type="submit"] {
+
+.login form input[type="submit"],
+.register form input[type="submit"] {
     width: 100%;
     padding: 15px;
     margin-top: 20px;
@@ -76,53 +103,66 @@ body {
     color: #ffffff;
     transition: background-color 0.2s;
 }
-.login form input[type="submit"]:hover, .register form input[type="submit"]:hover {
+
+.login form input[type="submit"]:hover,
+.register form input[type="submit"]:hover {
     background-color: #2868c7;
     transition: background-color 0.2s;
 }
+
 .navtop {
-    background-color: #2f3947;
+    background-color: #6060db;
     height: 60px;
     width: 100%;
     border: 0;
 }
+
 .navtop div {
     display: flex;
     margin: 0 auto;
     width: 1000px;
     height: 100%;
 }
-.navtop div h1, .navtop div a {
+
+.navtop div h1,
+.navtop div a {
     display: inline-flex;
     align-items: center;
 }
+
 .navtop div h1 {
     flex: 1;
     font-size: 24px;
     padding: 0;
-   margin: 0;
+    margin: 0;
     color: #eaebed;
     font-weight: normal;
 }
+
 .navtop div a {
     padding: 0 20px;
     text-decoration: none;
     color: #c1c4c8;
     font-weight: bold;
 }
+
 .navtop div a i {
     padding: 2px 8px 0 0;
 }
+
 .navtop div a:hover {
     color: #eaebed;
 }
+
 body.loggedin {
     background-color: #f3f4f7;
 }
+
 .content {
     width: 1000px;
     margin: 0 auto;
 }
+
 .content h2 {
     margin: 0;
     padding: 25px 0;
@@ -130,21 +170,102 @@ body.loggedin {
     border-bottom: 1px solid #e0e0e3;
     color: #4a536e;
 }
-.content > p, .content > div {
+
+.content > p,
+.content > div {
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
     margin: 25px 0;
     padding: 25px;
-  background-color: #fff;
+    background-color: #fff;
 }
-.content > p table td, .content > div table td {
-  padding: 5px;
+
+.content > p table td,
+.content > div table td {
+    padding: 5px;
 }
-.content > p table td:first-child, .content > div table td:first-child {
-  font-weight: bold;
-  color: #4a536e;
-  padding-right: 15px;
+
+.content > p table td:first-child,
+.content > div table td:first-child {
+    font-weight: bold;
+    color: #4a536e;
+    padding-right: 15px;
 }
+
 .content > div p {
-  padding: 5px;
-  margin: 0 0 10px 0;
+    padding: 5px;
+    margin: 0 0 10px 0;
+}
+
+/* Product Listing Styles */
+.product-card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-image {
+    height: 200px;
+    object-fit: contain;
+    width: 100%;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.price {
+    font-size: 1.2rem;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Product Detail Styles */
+.product-detail-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-image-detail {
+    max-width: 40%;
+    height: auto;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-info {
+    margin-bottom: 15px;
+}
+
+.product-info strong {
+    font-weight: bold;
+    margin-right: 5px;
 }

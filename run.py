@@ -7,4 +7,5 @@ if __name__ == '__main__':
             db.create_all()
         except Exception as e:
             print(f"Erro ao criar o banco de dados: {e}")
+    
     app.run(debug=True)
